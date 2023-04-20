@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Newsletter.scss";
 import {
   FaFacebookF,
@@ -6,6 +7,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 const Newsletter = () => {
+  const [input, setInput] = useState("");
   return (
     <div className="newsletter-section">
       <div className="newsletter-content">
@@ -13,7 +15,19 @@ const Newsletter = () => {
         <span className="big-text">Sign Up for latest updates and offers</span>
         <div className="form">
           <input type="text" placeholder="Email address" />
-          <button>Subcribe</button>
+          <button
+            onClick={() => {
+              alert(
+                "Cảm ơn bạn đã quan tâm đến chúng tôi, Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất"
+              );
+              var a = document.getElementsByTagName(input);
+              if (a.length >= 0) {
+                a = input;
+              }
+            }}
+          >
+            Subcribe
+          </button>
         </div>
         <div className="text">
           Will used in accordace with our Privacy Policy

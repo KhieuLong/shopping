@@ -1,0 +1,43 @@
+$form-background-color: #f2f2f2;
+$input-background-color: #ffffff;
+$input-border-color: #ccc;
+$input-padding: 10px;
+$button-background-color: #007bff;
+$button-color: #ffffff;
+$button-padding: 10px 20px;
+
+.App {
+  padding: 20px;
+
+  form {
+    background-color: $form-background-color;
+    padding: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        background-color: $input-background-color;
+        border: 1px solid $input-border-color;
+        padding: $input-padding;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    button[type="submit"] {
+      background-color: $button-background-color;
+      color: $button-color;
+      padding: $button-padding;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+.d-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
